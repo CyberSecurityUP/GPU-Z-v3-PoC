@@ -5,7 +5,7 @@ Replace DEV_PATH and IOCTL_TEST with your device name and the IOCTL that routes 
 #include <windows.h>
 #include <stdio.h>
 
-#define DEV_PATH        L"\\\\.\\<YourDeviceName>"   // e.g., \\.\MyDrv
+#define DEV_PATH        L"\\\\.\\GPU-Z-v3"   // e.g., \\.\MyDrv
 #define IOCTL_TEST      CTL_CODE(FILE_DEVICE_UNKNOWN, 0x<XXX>, METHOD_BUFFERED, FILE_ANY_ACCESS)
 
 typedef struct _OUT12 {
